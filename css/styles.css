@@ -109,6 +109,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .burger-icon {
@@ -504,6 +505,13 @@ img {
 .features-element {
   box-sizing: border-box;
   display: block;
+}
+
+.features-list {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 72px;
 }
 
@@ -534,11 +542,7 @@ img {
   }
 
   .features-list {
-  display: flex;
-  box-sizing: border-box;
   gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: row;
   }
 
@@ -986,7 +990,7 @@ img {
   .footer-container {
     justify-content: flex-start;
   }
-
+ 
 
   .footer-info-container {
     margin-right: 108px;
@@ -999,6 +1003,8 @@ img {
   }
   .footer-subscribe-form {
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 
   .footer-icon-text { 
