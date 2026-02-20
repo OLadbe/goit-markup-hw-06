@@ -74,7 +74,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav-list,
@@ -172,6 +171,7 @@ img {
   .contacts {
     font-style: normal;
     display: block;
+    margin-left: auto;
   }
 
   .contacts-list {
@@ -393,7 +393,7 @@ img {
 .hero {
   background-color: #2e2f42;
   display: block;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./../images/people-office.png);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./../images/people-mobile1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 320px;
@@ -474,9 +474,42 @@ img {
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./../images/people-office@2x.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./../images/people-mobile@2x.jpg);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url(../images/people-tablet1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url(../images/people-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url(../images/people-dekstop-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url(../images/people-dekstop@2x.jpg);
+  }
+}
+
 
 
 /* =================== */
@@ -532,7 +565,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   margin-bottom: 8px;
   color: #2E2F42;
 }
@@ -1014,12 +1046,12 @@ img {
 @media screen and (min-width: 768px) {
   .footer-container {
     justify-content: flex-start;
+    max-width: 584px;
+    margin: 0 auto;
   }
  
 
   .footer-info-container {
-    margin-right: 108px;
-  
     text-align: left;
   }
 
@@ -1104,7 +1136,7 @@ img {
   overflow-y: auto;
   box-sizing: border-box;
   position: relative;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-close-btn {
@@ -1246,6 +1278,7 @@ img {
 
 .custom-checkbox {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -1308,6 +1341,7 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    
   }
 
   .modal-text {
@@ -1325,4 +1359,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
 }
