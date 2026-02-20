@@ -1,6 +1,4 @@
-.hidden {
-  display: none;
-}
+
 
 * {
   list-style: none;
@@ -291,7 +289,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  align-items: left;
+  align-items: flex-start;
   margin-bottom: 168px;
 }
 
@@ -465,7 +463,7 @@ img {
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url('people-office@2x.png');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./../images/people-office@2x.png);
   }
 }
 
