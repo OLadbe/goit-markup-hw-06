@@ -505,6 +505,7 @@ img {
 .features-element {
   box-sizing: border-box;
   display: block;
+  width: 100%;
 }
 
 .features-list {
@@ -822,6 +823,10 @@ img {
     gap: 72px 24px;
     flex-wrap: wrap;
   }
+
+  .portfolio-card { 
+    flex-basis: calc((100% - 24px) / 2);
+  }
  
 }
 
@@ -829,7 +834,10 @@ img {
   .portfolio {
     padding: 120px 0;
   }
- 
+
+  .portfolio-card { 
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 /* =================== */
@@ -1039,9 +1047,6 @@ img {
   }
   .footer-subscribe {
     margin-left: auto;
-  }
-  .footer-subscribe-form {
-    flex-wrap: nowrap;
   }
 }
 
